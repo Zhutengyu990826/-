@@ -1,0 +1,216 @@
+/* pages/course/course.wxss */
+.header-nav {
+	height: 120rpx;
+	width: 100%;
+	background-color: white;
+	padding: 20rpx 0 20rpx 20rpx;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 180rpx;
+	background-color: white;
+	z-index: 3;
+}
+.header-navItem {
+	font-size: 35rpx;
+	line-height: 80rpx;
+	text-align: center;
+	color: #8c8c8c;
+}
+.active {
+	font-size: 38rpx;
+	color: black;
+	font-weight: bold;
+}
+.contentBox {
+	width: 100%;
+	padding: 0 30rpx;
+	box-sizing: border-box;
+	margin-top: 300rpx;
+}
+.searchBox {
+	width: 100%;
+	height: 80rpx;
+	border: 1rpx solid #e6e6e6;
+	border-radius: 10rpx;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	background-color: #f8f8f8;
+}
+.searchBox .icon {
+	width: 10%;
+	height: 100%;
+	text-align: center;
+	line-height: 100rpx;
+}
+.searchBox input {
+	width: 90%;
+	height: 100%;
+}
+.imgBox {
+	width: 100%;
+	height: 280rpx;
+	border-radius: 20rpx;
+	overflow: hidden;
+	margin-top: 25rpx;
+}
+.imgBox image {
+	width: 100%;
+	height: 100%;
+}
+.sortListBox {
+	width: 100%;
+	height: 250rpx;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+.sortListBox .sortList-item {
+	padding: 10rpx 20rpx;
+	width: auto;
+	margin-top: 20rpx;
+	margin-right: 15rpx;
+	font-size: 32rpx;
+	border-radius: 30rpx;
+}
+.sortList-item-active {
+	color: #1c9fea;
+	font-weight: 500;
+	background-color: rgba(28,159,234,.1);
+}
+.more {
+	width: 100%;
+	height: 100rpx;
+	background-color: #f7f7f7;
+	text-align: center;
+	line-height: 100rpx;
+	border-radius: 100rpx;
+	color: #3f4345;
+	font-size: 32rpx;
+}
+.moreItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.more image {
+	width: 40rpx;
+	height: 40rpx;
+	color: #aaa;
+}
+
+/* 课程 */
+.material-download {
+	width: 100%;
+  background-color: white;
+	overflow: hidden;
+	margin-top: 20rpx;
+}
+.material-item {
+  width: 100%;
+  height: 30%;
+  margin-left: 20rpx;
+  /* background-color: wheat; */
+  border-bottom:2rpx solid #ccc;
+  padding: 20rpx 40rpx 20rpx 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.item-img-box {
+  width: 260rpx;
+  height: 195rpx;
+  border-radius: 10rpx;
+ 
+}
+
+.item-img {
+  width: 100%;
+  height: 100%;
+}
+.item-title {
+	width: 375rpx;
+	margin-top: 10rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+	font-weight: 600;
+}
+.item-time {
+  color: #a4a4a4;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+.material-itemInfo-userBox {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 70rpx;
+}
+.material-itemInfo-user {
+	width: 300rpx;
+	height: 30rpx;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:1;
+	-webkit-box-orient: vertical;
+	font-size: 25rpx;
+	margin-top: 10rpx;
+	font-weight: 600;
+	
+}
+.material-itemInfo-user image {
+	width: 35rpx;
+	height: 35rpx;
+	border-radius: 50%;
+	margin-right: 10rpx;
+	vertical-align: middle;
+}
+.material-itemInfo-count {
+	margin-top: 10rpx;
+	font-size: 25rpx;
+	font-weight: 600;
+}
+.item-detail {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20rpx;
+	position: absolute;
+	bottom: 10rpx;
+}
+.item-detailLeft {
+	font-size: 25rpx;
+	color: rgb(126, 126, 126);
+}
+.item-detailRight {
+	display: flex;
+	overflow: hidden;
+	border-radius: 10rpx;
+	border: 1rpx solid orangered;
+	
+}
+.item-detailRight view {
+	padding: 6rpx 10rpx;
+	font-size: 23rpx;
+	border: 1rpx solid orangered;
+}
+.material-itemText {
+	position: relative;
+}
+.item-detailRight1 {
+	color: #ff5900;
+}
+.item-detailRight2 {
+	color: #fff;
+	background-color: #ff5900;
+}

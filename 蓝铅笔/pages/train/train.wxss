@@ -1,0 +1,575 @@
+/* pages/train/train.wxss */
+.sh-banner {
+  width: 100%;
+  height: 420rpx;
+  background: url("https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-bg.png") no-repeat 50%;
+  background-size: auto;
+  background-size: 100% 100%;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+  margin-top: 185rpx;
+
+}
+
+.Box {
+  background-color: rgb(204, 204, 204);
+}
+
+.banner-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.r1 {
+  height: 60%;
+}
+
+.r2 {
+  height: 25%;
+  margin-top: 30rpx;
+}
+
+.card-item {
+  width: 48.5%;
+  height: 100%;
+}
+
+.card-item image {
+  width: 100%;
+  height: 100%;
+
+}
+
+/* 免费教程 */
+.subMenuList {
+  width: 750rpx;
+  height: 320rpx;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15rpx 0;
+
+}
+
+.list-item {
+  width: 25%;
+  height: 160rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-img {
+  width: 96rpx;
+  height: 96rpx;
+}
+
+.list-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.list-text {
+  font-size: 25rpx;
+  margin-top: -10rpx;
+}
+
+/* 大触直播 */
+.liveBox {
+  margin-top: 20rpx;
+  width: 100%;
+  background-color: white;
+}
+
+.liveBox-title {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.liveBox-name {
+  font-size: 28rpx;
+  color: black;
+  font-weight: 500;
+}
+
+.liveBox-more {
+  font-size: 25rpx;
+  color: #aaa;
+}
+
+.liveBox-box {
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.liveBox-subject {
+  width: 100%;
+  background-color: white;
+  padding: 20rpx;
+  box-sizing: border-box;
+  box-shadow: 0rpx 0rpx 20rpx 0rpx #ddd;
+  border-radius: 10rpx;
+}
+
+.subject-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 25rpx;
+}
+
+.subject-header image {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.subject-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin: 10rpx 0;
+}
+
+.liveBox-subject video {
+  width: 100%;
+  height: 100%;
+}
+
+.subject-video {
+  width: 100%;
+  height: 370rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+
+.subject-details {
+  font-size: 23rpx;
+  margin-top: 10rpx;
+  color: #aaa;
+}
+
+.disflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.liveBox-tuijian {
+  display: flex;
+  justify-content: space-between;
+}
+
+.liveBox-tuijianItem {
+  width: 48.5%;
+  background-color: white;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  box-shadow: 0rpx 0rpx 20rpx 0rpx #ddd;
+  border-radius: 10rpx;
+}
+
+.tuijian-img {
+  width: 100%;
+  height: 225rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+
+.tuijian-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.subject-details view {
+  margin: 10rpx 0;
+}
+
+/* 轮播和热门推荐 */
+.hot-banner {
+  margin-top: 20rpx;
+  background-color: white;
+  width: 100%;
+  height: 500rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-banner {
+  width: 48.5%;
+  height: 100%;
+  background-color: red;
+  border-radius: 20rpx;
+}
+
+.right-banner {
+  width: 48.5%;
+}
+
+.left-bannerItem image {
+  width: 100%;
+  height: 100%;
+}
+
+.right-bannerHead {
+  display: flex;
+  align-items: center;
+}
+
+.right-bannerIcon {
+  width: 40rpx;
+  height: 40rpx;
+  background-image: url(https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-1-icon.png);
+  background-size: 100% 100%;
+  margin-right: 10rpx;
+}
+
+.right-bannerText {
+  font-size: 34rpx;
+}
+
+.right-bannerItem {
+  width: 100%;
+  height: 60rpx;
+  background-color: #f6f8fa;
+  margin-top: 15rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #87959f;
+  padding-left: 15rpx;
+  border-radius: 10rpx;
+}
+
+/* 主讲老师 */
+.main-teacher {
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  background-color: white;
+}
+
+
+.school-title {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.school-img-txt {
+  display: flex;
+  align-items: center;
+}
+
+.school-img-txt image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 4rpx;
+
+}
+
+.school-img-txt>view {
+  margin-left: 10rpx;
+}
+
+.right-title {
+  font-size: 30rpx;
+  color: #a4a4a4;
+}
+
+.teacherBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teacherItem {
+  width: 33%;
+  height: 100%;
+  margin: 20rpx 0;
+  /* background-color: red; */
+}
+
+.teacherItem-img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.teacherItem-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.teacher-name {
+  text-align: center;
+  font-size: 32rpx;
+  margin-top: 10rpx;
+}
+
+.teacher-lesson {
+  color: #a4a4a4;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+/* 学员作品展示 */
+.wordsShow {
+  background-color: white;
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+}
+
+.wordsShow-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+
+.wordsShow-item {
+  width: 32%;
+  height: 280rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-top: 20rpx;
+  position: relative;
+}
+
+.wordsShow-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.tag {
+  width: 86%;
+  height: 40rpx;
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+  top: 10rpx;
+  left: 7%;
+  border-radius: 7rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 22rpx;
+  line-height: 20rpx;
+}
+
+.tag image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 5rpx;
+}
+
+/* 热门课程推荐 */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course-item {
+  width: 49%;
+  margin-top: 20rpx;
+}
+
+.cover {
+  border-radius: 20rpx;
+  height: 270rpx;
+}
+
+.course-item-text {
+  height: 60rpx;
+  padding: 5rpx;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.course-item-text-img {
+  width: 200rpx;
+  height: 40rpx;
+
+}
+
+.course-item-text image {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rpx;
+}
+
+.course-text {
+  width: 400rpx;
+  margin-left: 5rpx;
+  font-size: 33rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.course-item .course-item__detail-info-user {
+  height: 50rpx;
+}
+
+.course-item .course-item__detail-info-user image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.course-item .course-item__detail-info-user .nickname {
+  font-size: 30rpx;
+  margin-right: 10rpx;
+}
+
+.course-item .course-period {
+  align-items: center;
+  height: 60rpx;
+  color: #8c8c8c;
+  font-size: 25rpx;
+}
+
+.course-item .course-period text {
+  color: #ff5900 !important;
+}
+
+.course-item__detail-info-user {
+  display: flex;
+  align-items: center;
+
+}
+
+.course-item__detail-info-user image {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  padding: 0;
+}
+
+
+/* 时间线 */
+.sch-history {
+  width: 100%;
+  background-color: white;
+}
+
+.history-list {
+  padding: 20rpx 50rpx;
+  box-sizing: border-box;
+}
+
+.history-item {
+  position: relative;
+  padding-bottom: 100rpx;
+  display: flex;
+}
+
+.history-item .date {
+  width: 120rpx;
+  color: #457eec;
+  font-size: 45rpx;
+}
+
+.history-item::before {
+  position: absolute;
+  top: 30rpx;
+  bottom:  -20rpx;
+  left: 145rpx;
+  width: 5rpx;
+  background-color: #457eec;
+  content: "";
+}
+
+.history-item .dot {
+  position: relative;
+  top: 15rpx;
+  z-index: 1;
+  width: 10rpx;
+  height: 10rpx;
+  padding: 10rpx;
+  margin-top: 5rpx;
+  margin-left: 35rpx;
+  background-color: rgb(255, 255, 255);
+  border: 5rpx solid #457eec;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.history-item .des {
+  margin-left: 25rpx;
+}
+
+.history-item .des-title {
+  color: #457eec;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.history-item .des-del {
+  color: #707070;
+  width: 500rpx;
+  margin-top: 20rpx;
+}
+
+.sh-header {
+  width: 100%;
+  height: 120rpx;
+  border-bottom: 1rpx solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.header-left {
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.header-left::before {
+  width: 120rpx;
+  height: 120rpx;
+  /* margin-right: .08rem; */
+  background-repeat: no-repeat;
+  /* background-position: 50%; */
+  background-size: 100% 100%;
+  content: "";
+  background-image: url("https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-5-icon.png");
+}
+
+.header-right {
+  color: #707070;
+}
+
+.history-btn {
+  width: 90%;
+  height: 80rpx;
+  margin: 50rpx 50rpx;
+  color: #fff;
+  font-size: 40rpx;
+  font-weight: 500;
+  line-height: 80rpx;
+  background-color: #457eec;
+  border-radius: 10rpx;
+  text-align: center;
+}

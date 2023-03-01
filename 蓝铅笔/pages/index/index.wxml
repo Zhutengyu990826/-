@@ -1,0 +1,148 @@
+<!--index.wxml-->
+<view class="bodyBox">
+	<headers></headers>
+	<!-- 轮播图 -->
+	<swiper class="swiper" indicator-dots>
+		<swiper-item class="swiperItem" wx:for="{{swiperList}}" wx:key="index">
+			<image src="https://ss.lanqb.com/{{item.picture}}"></image>
+		</swiper-item>
+	</swiper>
+	<!-- 免费教程 -->
+		<view class="subMenuList">
+			<view class="list-item" wx:for="{{subMenuList}}" wx:key="index">
+				<view class="list-img">
+					<image src="{{item.image}}" mode=""/>
+				</view>
+				<view class="list-text">
+					{{item.text}}
+				</view>
+			</view>
+		</view>
+		<!-- 直播 -->
+		<view class="liveBox">
+			<view class="liveBox-title">
+				<view class="liveBox-name">大触直播</view>
+				<view class="liveBox-more">查看更多></view>
+			</view>
+			<view class="liveBox-box">
+			<!-- 直播 -->
+				<view class="liveBox-subject">
+					<view class="subject-header">
+						<image src="https://ss.lanqb.com/e5249d12-b67b-44bc-942e-fdf661debf7a.JPG?imageView2/1/w/60/h/60"></image>
+						<view>kingpest</view>
+					</view>
+					<view class="subject-title">从构思到画面深入：气质插画创作分享</view>
+					<view class="subject-video">
+						<video src="https://v26-web.douyinvod.com/b0fe51f63471c6340d45fc68ee0b3a2f/63f33b15/video/tos/cn/tos-cn-ve-15c001-alinc2/o8AQrfXP2997zXuBetEBa1AOgChxAbXUbxjXIY/?a=6383&ch=26&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C3&cv=1&br=1198&bt=1198&cs=0&ds=4&ft=bvTKJbQQqU-~fJoZPo0ORVTYA0piv8vQ~jKJ8q8ElN0P3-A&mime_type=video_mp4&qs=0&rc=Njg5OGQ2Z2hoO2c8NzY3ZUBpM3V3a2g6ZjpvaTMzNGkzM0BhNF41NC01NmAxMzEvYjEzYSNgYi9ycjRvamlgLS1kLS9zcw%3D%3D&l=202302201619085A4B665BF6F1240617B7&btag=8000" poster=""></video>
+					</view>
+					<view class="subject-details disflex">
+						<view>时间：3月02日 19:30</view>
+						<view>3422人感兴趣</view>
+					</view>
+				</view>
+				<view class="liveBox-tuijian">
+					<view class="liveBox-tuijianItem">
+						<view class="subject-header">
+							<image src="https://ss.lanqb.com/4ac3529a-842d-4c58-8800-2ed09b1121d3.jpg?imageView2/1/w/60/h/60"></image>
+							<view>kingpest</view>
+						</view>
+						<view class="subject-title">手绘人の自我修养！黑白插画创作心得</view>
+						<view class="tuijian-img">
+							<image src="https://ss.lanqb.com/o_1gmij7hi8f2q1tff1hr1qmflei2l.png?imageView2/1/w/360/h/270"></image>
+						</view>
+						<view class="subject-details">
+							<view>时间：3月02日 19:30</view>
+							<view>❤3422</view>
+						</view>
+					</view>
+					<view class="liveBox-tuijianItem">
+						<view class="subject-header">
+							<image src="https://ss.lanqb.com/c2b34608-103d-4c2a-bdef-89bf95a57c31.jpg?imageView2/1/w/60/h/60"></image>
+							<view>kingpest</view>
+						</view>
+						<view class="subject-title">美少年捏脸术！N款男性角色の刻画技巧</view>
+						<view class="tuijian-img">
+							<image src="https://ss.lanqb.com/o_1go3b4skj6cq13c5hfo1pn8s3f23.png?imageView2/1/w/360/h/270"></image>
+						</view>
+						<view class="subject-details">
+							<view>时间：3月02日 19:30</view>
+							<view>❤3422</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<!-- 热门教程 -->
+		<view class="hot">
+			<view class="liveBox-title">
+				<view class="liveBox-name">热门教程</view>
+				<view class="liveBox-more">查看更多></view>
+			</view>
+			<view class="hotBox">
+				<view class="hot-item" wx:for="{{hotList}}" wx:key="index">
+					<view class="hot-itemImg">
+						<image src="https://ss.lanqb.com/{{item.posters.app}}"></image>
+					</view>
+					<view class=".hot-itemText">
+						{{item.title}}
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<!-- 问答专区 -->
+		<view class="QA">
+			<view class="liveBox-title">
+				<view class="liveBox-name">问答专区</view>
+				<view class="liveBox-more">查看更多></view>
+			</view>
+			<view class="QA-Box">
+				<view class="QA-Item" wx:for="{{QAList}}" wx:key="index">
+					<view class="QA-header">
+						<image src="{{item.user_avatar}}"></image>
+						<view>{{item.user_nickname}}</view>
+					</view>
+					<view class="QA-title">
+						<view class="wen">问</view>
+						<view class="QA-titleText">{{item.title}}</view>
+					</view>
+					<view class="QA-content">
+						<view class="QA-contentText">{{item.content}}</view>
+						<view class="QA-contentImg">
+							<image src="{{item.works[0]}}"></image>
+						</view>
+					</view>
+					<view class="main-layout">
+						<view class="teacher-info">
+							<image src="{{item.answer_user_avatar}}"></image>
+							<view class="t-nickname">
+								{{item.answer_user_nickname}}
+							</view>
+							<view class="t-adopted_qa">已采纳</view>
+						</view>
+						<view class="t-content">
+							{{item.answer_content[0].value}}
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<!-- 素材下载 -->
+		<view class="material-download">
+			<view class="liveBox-title">
+				<view class="liveBox-name">问答专区</view>
+				<view class="liveBox-more">查看更多></view>
+			</view>
+			<view class="material-item" wx:for="{{materialList}}" wx:key="index">
+				<view class="item-img-box">
+					<image class="item-img" src="https://ss.lanqb.com/{{item.imgCover}}" mode=""/>
+				</view>
+				<view>
+					<view class="item-title">{{item.title}}</view>
+					<view class="item-time">{{item.created_at}}</view>
+				</view>
+			</view>
+		</view>
+</view>

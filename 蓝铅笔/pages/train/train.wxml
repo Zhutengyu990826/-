@@ -1,0 +1,137 @@
+<view class="Box">
+  <headers></headers>
+  <view class="sh-banner">
+    <view class="banner-cards r1">
+      <view class="card-item">
+        <image src="https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-1-img.png" mode="" />
+      </view>
+      <view class="card-item">
+        <image src="https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-2-img.png?v=221128" mode="" />
+      </view>
+    </view>
+    <view class="banner-cards r2">
+      <view class="card-item">
+        <image src="https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-3-img.png" mode="" />
+      </view>
+      <view class="card-item">
+        <image src="https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-4-img.png" mode="" />
+      </view>
+    </view>
+  </view>
+  <view class="subMenuList">
+    <view class="list-item" wx:for="{{subMenuList}}" wx:key="index">
+      <view class="list-img">
+        <image src="{{item.image}}" mode="" />
+      </view>
+      <view class="list-text">
+        {{item.text}}
+      </view>
+    </view>
+  </view>
+  <!-- 轮播和热门推荐 -->
+  <view class="hot-banner">
+    <swiper class="left-banner" indicator-dots indicator-color="#aaa" indicator-active-color="white" autoplay>
+      <swiper-item class="left-bannerItem" wx:for="{{bannerList}}" wx:key="index">
+        <image src="https://ss.lanqb.com/{{item.picture}}" alt="" />
+      </swiper-item>
+    </swiper>
+    <view class="right-banner">
+      <view class="right-bannerHead">
+        <view class="right-bannerIcon"></view>
+        <view class="right-bannerText">热门推荐</view>
+      </view>
+      <view class="right-bannerItem" wx:for="{{hotList}}" wx:key="index">
+        {{item.text}}
+      </view>
+    </view>
+  </view>
+
+  <!-- 热门课程推荐 -->
+  <view class="course-list">
+    <view class="course-item" wx:for="{{professionalsList}}" wx:key="index">
+      <image class="cover" src="https://ss.lanqb.com/{{item.posters.app}}" mode="" />
+      <view class="course-item-text">
+        <view class="course-item-text-img">
+          <image src="https://assets-cdn.lanqb.com/school_v5/school/live-icon@2x.png?imageView2/1/w/85/h/34" mode="" />
+        </view>
+        <view class="course-text">{{item.title}}</view>
+      </view>
+      <view class="course-item__detail-info-user">
+        <image class="" src="{{item.major_introduction[0].avatar_src}}" mode=""/>
+        <text class="nickname">{{item.major_introduction[0].nickname}}</text>
+        <image class="" src="{{item.major_introduction[1].avatar_src}}" mode=""/>
+        <text class="nickname">{{item.major_introduction[1].nickname}}</text>
+      </view>
+      <view class="course-period">
+        <view>学习周期: 6周</view>
+        <view>
+          <text>{{item.statistic.advisory}}</text>人感兴趣
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 主讲大咖老师 -->
+  <!-- <view class="main-teacher">
+    <view class="school-title">
+      <view class="school-img-txt">
+        <image src="https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-2-icon.png" mode="" />
+        <view>
+          主讲大咖老师
+        </view>
+      </view>
+      <view class="right-title">更多></view>
+    </view>
+    <view class="teacherBox">
+      <view class="teacherItem" wx:for="{{3}}">
+        <view class="teacherItem-img">
+          <image src="https://ss.lanqb.com/20170412/1491999115SAsYuEnx-c-924x924.JPG?imageView2/1/w/190/h/190"></image>
+        </view>
+        <view class="teacher-name">DAdonika</view>
+        <view class="teacher-lesson">行业经验：6年</view>
+      </view>
+    </view>
+  </view> -->
+
+  <!-- 学员作品展示 -->
+  <!-- <view class="wordsShow">
+    <view class="school-title">
+      <view class="school-img-txt">
+        <image src="https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-2-icon.png" mode="" />
+        <view>
+          学员作品展示
+        </view>
+      </view>
+      <view class="right-title">更多></view>
+    </view>
+    <view class="wordsShow-box">
+      <view class="wordsShow-item" wx:for="{{6}}">
+        <image src="https://ss.lanqb.com/o_1dggr8oho1d3q17fe67pmhg1kgq7.jpg?imageView2/1/w/330/h/420"></image>
+        <view class="tag">
+          <image src="https://assets-cdn.lanqb.com/imgv4/icon/icon-work.png"></image>
+          一个月学习成果
+        </view>
+      </view>
+
+    </view>
+  </view> -->
+
+  <view class="sch-history">
+    <view class="sh-header">
+      <view class="header-left">关于蓝铅笔</view>
+      <view class="header-right">更多></view>
+    </view>
+    <view class="history-btn">400万人与你同行 为什么选择蓝铅笔?</view>
+    <view class="history-list">
+      <view class="history-item" wx:for="{{historyList}}" wx:key="index">
+        <view class="date">{{item.date}}</view>
+        <text class="dot"></text>
+        <view class="des">
+          <view class="des-title">{{item.desTitle}}</view>
+          <view class="des-del">{{item.desDetail}}</view>
+        </view>
+      </view>
+    </view>
+     
+  </view>
+
+</view>

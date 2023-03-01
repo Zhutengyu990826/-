@@ -1,0 +1,26 @@
+<!--component/headers.wxml-->
+<view class="header">
+		<view class="header-left">
+			<view class="header-brand1">
+				<image class="header-brand1-img" src="https://assets-cdn.lanqb.com/lanqb/logo05.png"></image>
+			</view>
+			<view class="header-brand2">
+				<image class="header-brand2-img" src="https://assets-cdn.lanqb.com/lanqb/2023/2023year.png"></image>
+			</view>
+		</view>
+
+		<view class="header-right">
+			<swiper class="header-swiper" autoplay vertical>
+				<swiper-item class="header-swiperItem1">
+					<image class="header-swiperItem1-img" src="https://assets-cdn.lanqb.com/pc/login/regster-reward_3.png"></image>
+				</swiper-item>
+				<swiper-item class="header-swiperItem2">
+					<view>注册</view>
+					<view>登录</view>
+				</swiper-item>
+			</swiper>
+		</view>
+	</view>
+	<view class="act-banner">
+		<image class="act-banner-img" src="https://assets-cdn.lanqb.com/popupv3/221205/m-ht.png"></image>
+	</view>

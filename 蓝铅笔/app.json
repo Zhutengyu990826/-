@@ -1,0 +1,53 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/course/course",
+		"pages/train/train",
+		"pages/dachu/dachu",
+		"pages/user/user"
+	],
+	"tabBar": {
+		"color": "#878787",
+		"selectedColor": "#000",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "/images/home.jpg",
+				"selectedIconPath": "/images/home-h.jpg"
+			},
+			{
+				"pagePath": "pages/course/course",
+				"text": "教程",
+				"iconPath": "/images/course.jpg",
+				"selectedIconPath": "/images/course-h.jpg"
+			},
+			{
+				"pagePath": "pages/train/train",
+				"text": "网校",
+				"iconPath": "/images/train.jpg",
+				"selectedIconPath": "/images/train-h.jpg"
+			},
+			{
+				"pagePath": "pages/dachu/dachu",
+				"text": "大触",
+				"iconPath": "/images/dachu.jpg",
+				"selectedIconPath": "/images/dachu-h.jpg"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "我的",
+				"iconPath": "/images/user.jpg",
+				"selectedIconPath": "/images/user-h.jpg"
+			}
+		]
+	},
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "Weixin",
+		"navigationBarTextStyle": "black"
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json"
+}

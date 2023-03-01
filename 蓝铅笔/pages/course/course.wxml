@@ -1,0 +1,67 @@
+<!--pages/course/course.wxml-->
+<view>
+	<headers></headers>
+	<swiper class="header-nav" display-multiple-items="5.5">
+		<swiper-item class="header-navItem {{navIndex === item.id ? 'active' : ''}}" wx:for="{{navList}}" wx:key="id" bindtap="modifyIndex" data-Index="{{item.id}}">
+			{{item.text}}
+		</swiper-item>
+	</swiper>
+	<!-- 搜索框 -->
+	<view class="contentBox">
+		<view class="searchBox">
+			<view class="icon">
+				<icon type="search"></icon>
+			</view>
+			<input type="text" placeholder="绘画教程" />
+		</view>
+		<view class="imgBox">
+			<image src="{{lanqbList.picture ? 'https://ss.lanqb.com/'+lanqbList.picture : ''}}"></image>
+		</view>
+		<!-- 分类 -->
+		<view class="sortListBox" style="height:{{showMore?'100%':'250rpx'}}">
+			<view class="sortList-item {{sortIndex === -1 ? 'sortList-item-active' : ''}}" data-sortIndex="{{-1}}" bindtap="getsortIndex">全部</view>
+			<view class="sortList-item {{sortIndex === index ? 'sortList-item-active' : ''}}" wx:for="{{sortList.course_subjects}}" wx:key="index" data-sortIndex="{{index}}" bindtap="getsortIndex">
+				{{item.name}}
+			</view>
+		</view>
+		<view class="more">
+			<view class="moreItem" bindtap="isShowMore" wx:if="{{!showMore}}">
+					更多筛选
+				<image src="../../images/向下.png"></image>
+			</view>
+			<view class="moreItem" bindtap="isShowMore" wx:if="{{showMore}}">
+				收起<image src="../../images/向上.png"></image>
+			</view>
+		</view>
+		<!-- 课程 -->
+		<view class="courseBox">
+			<view class="material-download">
+				<view class="material-item" wx:for="{{courseList}}" wx:key="index">
+					<view class="item-img-box">
+						<image class="item-img" src="https://ss.lanqb.com/{{item.posters.app}}" mode=""/>
+					</view>
+					<view class="material-itemText">
+						<view class="item-title">{{item.title}}</view>
+						<view class="material-itemInfo-userBox">
+							<view class="material-itemInfo-user">
+								<image src="https://ss.lanqb.com/{{item.profile.avatar}}"></image>
+								{{item.profile.nickname}}
+							</view>
+							<view class="material-itemInfo-count">共{{item.preview_setting.lessons_count}}节</view>
+						</view>
+						<view class="item-detail">
+							<view class="item-detailLeft">{{item.study_num}}人在学</view>
+							<view class="item-detailRight">
+								<view class="item-detailRight1">￥{{item.production.origin_rmb_price}}</view>
+								<view class="item-detailRight2">{{item.share_preferential_type ? '分享半价学' : '分享0元学'}}</view>
+							</view>
+						</view>
+					</view>
+					<view class="material-itemInfo">
+						
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
